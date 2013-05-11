@@ -1,1 +1,34 @@
-<html><input type="text"></input></html>
+<div>
+	edit
+	<script>
+
+
+	$(function(){
+		var editorTextArea = 		document.getElementById('editor')
+		// /$("#editor");
+
+
+		var myCodeMirror = CodeMirror.fromTextArea(editorTextArea,
+		{
+			mode: 'markdown',
+			lineNumbers: true,
+			theme: "default",
+			extraKeys: {"Enter": "newlineAndIndentContinueMarkdownList"}
+		}
+		);
+		console.log($("#editor"));
+		console.log('fu editor');
+
+	});
+	</script>
+
+	<div id="editor-wrapper">
+		<div> <textarea id="editor" rows="4" cols="50" style="display: none;">
+			#Create your Cheeatz here
+		</textarea></div>
+		<div >two two two two two two</div>
+	</div>
+
+
+	<hr />
+</div>
